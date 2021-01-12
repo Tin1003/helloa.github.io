@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>multilv-menu</title>
+
+    <style>
+        .flex {
+            display: flex;
+        }
+        li {
+            list-style: none;
+            padding: 10px 20px;
+            background-color: lightblue;
+            color: red;
+            height: fit-content;
+        }
+        ul {
+            display: inline;
+            padding: 0;
+            margin: 0;
+        }
+        .mainmenu > li {
+            border-right: 1px solid;
+        }
+        .mainmenu > li:last-child{
+            border-right: none;
+        }
+        .menu1 {
+            position: relative;
+        }
+        .menu1 > ul {
+            position: absolute;
+            left: 0;
+            top: 40px;
+        }
+        .catemenu > li {
+            border-bottom: 1px solid;
+            width: 45px;
+        }
+        .absomenu {
+            position: relative;
+        }
+        .dsach {
+            position: absolute;
+            left: 87px;
+            top: 0;
+        }
+        .dsach > li {
+            border-bottom: 1px solid;
+        }
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+
+        <ul class="mainmenu flex">
+
+            <li class="menu1">menu1
+
+                <ul class="catemenu">
+
+                    <li>cate1</li>
+
+                    <li class="absomenu">cate2
+
+                        <ul class="dsach">
+                            <li>thu1</li>
+                            <li>thu2</li>
+                            <li>thu3</li>
+                            <li>thu4</li>
+                        </ul>
+                            
+                    </li>
+
+
+                    <li>cate3</li>
+                </ul>
+            
+            </li>
+            <li>menu2</li>
+            <li>menu3</li>
+            <li>menu4</li>
+        </ul>
+    </div>
+    
+</body>
+</html>
